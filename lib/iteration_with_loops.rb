@@ -6,7 +6,7 @@ def join_nested_strings(src)
     while element_index < src[row_index].count do
       #if element is a string, shovel into new_string array
       if src[row_index][element_index].is_a? String
-        new_string += src[row_index][element_index]
+        new_string += src[row_index][element_index] += " "
       end
       element_index += 1 
     end
